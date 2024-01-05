@@ -1,5 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+
 *{
     margin: 0;
-    padding-right: 0;
-    background-color: white;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #035D78; */
+
 }
+
+
+nav{
+    background-color: #88a6b124;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vh 5vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.173);
+
+}
+#logo{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 3vh;
+}
+.menu{
+    display: flex;
+    gap: 3vw;
+
+}
+.quick-links{
+    position: relative;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 9;
+}
+.quick-links::after{
+    content: '';
+    background-color: black;
+    width: 110%;
+    height: 100%;
+    /* top: 100%; */
+    top: 100%;
+    left: -5%;
+    z-index: 2;
+    border-radius: 70%;
+
+    position: absolute;
+
+}
+.quick-links:hover::after{
+    top: 0;
+
+    border-radius: 30px;
+    transition: all 300ms ease;
+}
+.quick-links:hover .links{
+    color: white;
+}
+.quick-links:hover{
+    border-color: black;
+}
+.links{
+    text-decoration: none;
+    color:black;
+    position: relative;
+    z-index: 100;
+}
+
+.lines_container{
+    display: none;
+    position: relative;
+    z-index: 5;
+}
+.lines{
+    background-color: black;
+    width: 30px;
+    border-radius: 5px;
+    height: 4px;
+    margin: 5px 0px;
+    transition-duration: 200ms;
+}
+
+#slider{
+    background-color: rgba(0, 0, 0, 0.629);
+    height: 100vh;
+    width: 40vw;
+    position: fixed;
+    top:0;
+    border-left: 2px solid black ;
+    right: -42vw;
+    z-index: 2;
+    transition-duration: 300ms;
+
+}
+.container_links{
+    margin-top: 50px;
+
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.menus{
+    margin-top: 50px;
+    line-height: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.menus a{
+    text-decoration:  none;
+    color: #dadada;
+    font-size: 1.7rem;
+}
+
+/* for mobile */
+
+@media (max-width: 750px) {
+    .quick-links{
+        display: none;
+    }
+    .lines_container{
+        display: inline-block;
+    }
+    .lines_container.active :nth-child(1){
+        background-color: #dadada;
+        transform: rotate(45deg);
+        translate: 0px 5px ;
+        transition-duration: 200ms;
+
+    }
+    .lines_container.active :nth-child(3){
+        background-color: #dadada;
+        transform: rotate(-45deg);
+        translate: 0px -5px ;
+        transition-duration: 200ms;
+    }
+    .lines_container.active :nth-child(2){
+        display: none;
+    }
+    #slider.slide{
+        right: 0vw;
+        transition-duration: 300ms;
+    }
+}
+
