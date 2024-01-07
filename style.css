@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -132,15 +132,16 @@ nav{
 /* page 1 */
 .page1{
     /* height: calc(94vh - 30px); */
-    height: calc(94vh - 30px);
+    height: calc(80vh - 30px);
     /* background-color: aqua; */
     display: flex;
 
 }
 .left{
+    background-color: rgba(255, 255, 255, 0);
     padding-left: 5vw;
     width: 55vw;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,6 +150,8 @@ nav{
 }
 
 button{
+    position: relative;
+    z-index: 102;
     width: fit-content;
     padding: 10px 40px;
     background-color:#035D78; 
@@ -161,6 +164,8 @@ button{
     cursor: pointer;
 }
 h1{
+    position: relative;
+    z-index: 100;
     font-size: 4rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.813);
@@ -171,33 +176,53 @@ h1 span{
     font-weight: 700;
 
 }
-.blur{
+#blur_2{
+    will-change: transform;
     position: absolute;
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     /* background-color: linear-gradient(to right, #035d78, red); */
     top: 18vh;
-    background-color: rgb(128, 188, 189);
+    background-color: #65B741;
     left: 80px;
     z-index: -2;
-    filter: blur(20px);
+    filter: blur(35px);
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: linear ;
+    animation-delay: 400ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: skew(10deg);
+
+
 }
 #blur_1{
+    will-change: transform;
     position: absolute;
     height: 250px;
     width: 200px;
     border-radius: 50%;
     /* background-color: linear-gradient(to right, #035d78, red); */
-    top: 20vh;
+
     background-image: linear-gradient(rgb(249, 247, 201), rgb(128, 188, 189));
-    left: 60px;
-    z-index: -1;
-    filter: blur(50px);
+    left: 60px;  
+      top: 20vh;
+    z-index: 0;
+    filter: blur(60px);
+    animation-name: run;
+    animation-duration: 1.5s;
+    animation-timing-function: linear ;
+    animation-delay: 200ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 h2{
     font-size: 1.5rem;
     font-weight: 300;
+    position: relative;
+    z-index: 101;
 }
 .right{
     overflow: hidden;
@@ -218,14 +243,15 @@ h2{
 
 }
  .left button:hover{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     border: 3px solid #035D78;
     transition-duration: 200ms;
     color:#035D78;
  }
  .scroll{
     display: none;
-    font-family: 'Handlee', cursive;
+    font-family: 'Delicious Handrawn', cursive;
+
  }
 
  /* page2 */
@@ -240,6 +266,15 @@ h2{
 @media (max-width: 750px) {
 
     /* navbar */
+    .img_container{
+        display: none;
+    }
+    .image_round{
+        display: none;
+    }
+    .scroll_down{
+        display: none;
+    }
     .quick-links{
         display: none;
     }
@@ -322,15 +357,19 @@ h2{
         display: block;
         position: absolute;
         top: 60vh;
-        color: rgba(0, 0, 0, 0.508);
         font-size: 35px;
-        left: 40%;
+        left: 42.5%;
     
      }
      .blur{
         display: none;
     }
 
+    .scroll::after{
+        content: '\2193';
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:45px;
+    }
 }
 @media (max-width: 1180px) { 
     h1{
@@ -355,6 +394,180 @@ h2{
 
 }
 @keyframes move {
-    
-    
+    from{
+        top: 18vh;
+        left: 80px;
+        transform: skew(10deg);
+    }
+    to{
+        top: 25vh;
+        left: -30px;
+        transform: skew(-10deg);
+    }
+}
+
+@keyframes run {
+    from{
+        left: 60px;  
+        top: 20vh;
+    }
+    to{
+        top: 30vh;
+        left: 100px;
+    }
+}
+.left button::after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -25px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='48' height='48'%3E%3Cpath d='M13.9093 12.3603L17.0007 20.8537L14.1816 21.8798L11.0902 13.3864L6.91797 16.5422L8.4087 1.63318L19.134 12.0959L13.9093 12.3603Z' fill='currentColor'%3E%3C/path%3E%3C/svg%3E");
+    scale: 0.8;
+    bottom: -28px;
+    animation-name: jatt;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
+}
+@keyframes jatt {
+    0%{
+        transform: rotate(0deg);
+        scale: 1;
+
+    }
+    50%{
+        transform: rotate(10deg);
+        scale: 1;
+        filter: blur(1px);
+    }
+    75%{
+        filter: blur(0px);
+    }
+    100%{
+
+        transform: rotate(0deg);
+        scale: 1;
+    }
+}
+.left button:hover::after{
+    opacity: 0;
+    scale: 0;
+    transition-duration: 200ms;
+}
+.left button::after{
+    transition-duration: 200ms;
+}
+
+.scroll_down{
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 40px;
+    position: absolute;
+    bottom: 150px;
+    left: 70%;
+    opacity: 1;
+    z-index: 1000;
+
+}
+.scroll_down::after{
+    content: '\2193';
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:45px;
+    opacity: 1;
+}
+.image_round{
+    border-radius: 50%;
+    border: 2px solid black;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img_container{
+    z-index: 1000;
+    width: 40%;
+    display: flex;
+    left: 12.5%;
+    align-items: center;
+    justify-content: center;
+    top: 68vh;
+
+    position: absolute;
+}
+.project{
+    font-size: 40px;
+    font-weight: 500;
+    color: #013342;
+}
+.project_container{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* Project Section */
+.page2{
+    height: fit-content;
+    overflow: hidden;
+}
+.real_project_cont{
+    padding: 20px 5vw;
+    height: fit-content;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pro_photo_container{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info_pro_img{
+    width: 400px;
+
+}
+
+.pro_photos{
+    overflow: hidden;
+    border: 2px solid #013342;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    width: 400px;
+    /* height: fit-content; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info_pro{
+    font-size: 20px;
+    font-weight: 300;
+    color: #013342;
+}
+@media (max-width: 750px) {
+        .pro_photo_container{
+            margin-top: 25px;
+            width: 100%;
+            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 550px;
+    }
+    .page2{
+        margin-top: 20vh;
+    }
 }
