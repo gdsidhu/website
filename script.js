@@ -1,7 +1,9 @@
 const hamburger = document.querySelector(".lines_container")
 const menu = document.querySelector("#slider")
 const scroll = document.querySelector(".scroll_down")
-console.log(scroll)
+const projectCont1 = document.querySelector("#pro_photo_container1")
+const projectCont2 = document.querySelector("#pro_photo_container2")
+const projectCont3 = document.querySelector("#pro_photo_container3")
 
 
 hamburger.addEventListener("click", ()=>{
@@ -37,6 +39,40 @@ tl.to(scroll, {
 tl.to(scroll, {
 opacity:0,
 })
+tl.from(projectCont1,{
+    scrollTrigger:{
+        trigger:"#pro_photo_container1",
+        scroller: "body",
+        end : "top 75%",
+        scrub:1.5,
 
+    },
+    
+    translateX: 1100,
+
+
+})
+tl.from(projectCont2,{
+    scrollTrigger:{
+        trigger:"#pro_photo_container2",
+        scroller: "body",
+        end : "top 75%",
+        scrub:1.5,
+
+    },
+    translateX: -1100,
+
+})
+tl.from(projectCont3,{
+    scrollTrigger:{
+        trigger:"#pro_photo_container3",
+        scroller: "body",
+        end : "top 75%",
+        scrub:1.5,
+
+    },
+    translateX: 1100,
+
+})
 
 
