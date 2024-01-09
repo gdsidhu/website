@@ -327,6 +327,7 @@ h2{
     .right{
         display: flex;
         padding-left: 50px;
+        margin-top: 30px;
         width: 100vw;
         height: calc(35vh - 30px);
         background-color: #035d78;
@@ -359,8 +360,8 @@ h2{
         top: 60vh;
         font-size: 35px;
         left: 42.5%;
-    
      }
+
      .blur{
         display: none;
     }
@@ -569,7 +570,7 @@ h2{
             min-height: 550px;
     }
     .page2{
-        margin-top: 20vh;
+        margin-top: calc(20vh + 30px);
     }
 }
 /* page 3 */
