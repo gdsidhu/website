@@ -758,12 +758,14 @@ h2{
 } */
 
 .phone{
+    color: #013342;
     font-size: 20px;
     line-height: 50px;
     position: relative;
     left: -40px;
 }
 .mail{
+    color: #013342;
     font-size: 20px;
     line-height: 50px;
 }
@@ -806,18 +808,20 @@ h2{
         padding-bottom: 60px;
     }
     .phone{
+
         font-size: 20px;
         line-height: 40px;
         position: relative;
         left: 0px;
     }
     .mail{
+
         font-size: 20px;
         line-height: 40px;
     }
 }
 #footer_container{
-    background-color: black;
+    background-color: #013342;
     height: 250px;
 }
 .footer_box1{
@@ -859,7 +863,7 @@ h2{
         display: none;
     }
     #footer_container{
-        background-color: black;
+        background-color: #013342;
         height: fit-content;
     }
     .footer_box1{
@@ -900,7 +904,7 @@ h2{
 }
 .socials_card a{
     text-decoration: none;
-    color: black;
+    color: #013342;
     transition-duration: 200ms;
 }
 .socials_card a:hover{
@@ -910,18 +914,19 @@ h2{
 @media (max-width: 750px) {
     .socials_card a{
         text-decoration: none;
-        color: black;
+        color: #013342;
         transition: none;
     }
     
     .socials_card a:hover{
-        color: rgba(0, 0, 0);
+        color: #013342;
     transition: none;
     }
     .social_icons{
         font-size: 12vw;
     }
     .phone{
+
         font-size: 4vw;
         line-height: 7vh;
         position: relative;
