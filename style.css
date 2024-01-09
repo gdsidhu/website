@@ -814,7 +814,7 @@ h2{
 }
 .this{
     font-size: 1rem;
-    font-weight: 100;
+    font-weight: 300;
     color: #EEF2F4;
     align-self: center;
 }
@@ -822,4 +822,13 @@ h2{
     #maut{
         display: none;
     }
+}
+.socials_card a{
+    text-decoration: none;
+    color: black;
+    transition-duration: 200ms;
+}
+.socials_card a:hover{
+    color: rgba(0, 0, 0, 0.625);
+    transition-duration: 200ms;
 }

@@ -5,6 +5,9 @@ const projectCont1 = document.querySelector("#pro_photo_container1")
 const projectCont2 = document.querySelector("#pro_photo_container2")
 const projectCont3 = document.querySelector("#pro_photo_container3")
 
+function open_resume(){
+    window.open("./assets/Resume_gundeep.pdf");
+}
 
 hamburger.addEventListener("click", ()=>{
     hamburger.classList.toggle("active");
