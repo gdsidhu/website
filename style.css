@@ -24,7 +24,7 @@ nav{
 
 }
 #logo{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 3vh;
     cursor: default;
@@ -345,8 +345,8 @@ h2{
 
     }
     #logo{
-        font-size: 2rem;
-        font-weight: 300;
+        font-size: max(1.3rem, 5vw);
+        font-weight: 300rem;
     }
     nav{
         top: 0;
