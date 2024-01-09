@@ -376,19 +376,19 @@ h2{
         font-size:45px;
     }
     h1{
-        font-size: 9vw;
+        font-size: 10vw;
         font-weight: 400;
         color: rgba(0, 0, 0, 0.813);
     }
     h1 span{
-        font-size: 10vw;
+        font-size: 11vw;
         color: #035D78;
         font-weight: 700;
     
     } 
     h2{
-        font-size: 4vw;
-        font-weight: 300;
+        font-size: 4.2vw;
+        font-weight: 350;
     }
 
 
@@ -672,6 +672,7 @@ h2{
 .about_content{
     font-size: 4vw;
     display: flex;
+    font-weight: 310;
     flex-direction: column;
     width: 90vw;
     line-height: 4vh;
@@ -683,7 +684,7 @@ h2{
 .per{
     align-self: center;
     font-size: 4vw;
-    font-weight: 300;
+    font-weight: 350;
 }
 
 }
@@ -885,14 +886,14 @@ h2{
         background-color: #eef2f4a1;
     }
     .portfolio{
-        font-size: 5vw;
+        font-size: 5.3vw;
         align-self: center;
         margin-top: 15px;
         color: #eef2f4cb;
     }
     .this{
-        font-size: 3vw;
-        font-weight: 300;
+        font-size: 3.5vw;
+        font-weight: 350;
         color: #eef2f496;
         align-self: center;
     }
