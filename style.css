@@ -166,12 +166,12 @@ button{
 h1{
     position: relative;
     z-index: 100;
-    font-size: 4rem;
+    font-size: max(3.5rem , 5.5vw);
     font-weight: 400;
     color: rgba(0, 0, 0, 0.813);
 }
 h1 span{
-    font-size: 4.5rem;
+    font-size: max(4rem , 6vw);
     color: #035D78;
     font-weight: 700;
 
@@ -219,7 +219,7 @@ h1 span{
     animation-direction: alternate;
 }
 h2{
-    font-size: 1.5rem;
+    font-size: max(1.3rem , 1.7vw);
     font-weight: 300;
     position: relative;
     z-index: 101;
@@ -324,7 +324,7 @@ h2{
         width: 100vw;
         position: relative;
         top: 8vh;
-        line-height: 45px;
+        line-height: max(45px, 7.5vh);
         height: 55vh;
     }
 
