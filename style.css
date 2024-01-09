@@ -96,11 +96,11 @@ nav{
 #slider{
     background-color: rgba(0, 0, 0, 0.859);
     height: 100vh;
-    width: 60vw;
+    width: 40vw;
     position: fixed;
     top:0;
     border-left: 2px solid black ;
-    right: -60vw;
+    right: -42vw;
     z-index: 10001;
     transition-duration: 300ms;
 
@@ -132,7 +132,7 @@ nav{
 /* page 1 */
 .page1{
     /* height: calc(94vh - 30px); */
-    height: fit-content;
+    height: calc(80vh - 30px);
     /* background-color: aqua; */
     display: flex;
 
@@ -283,7 +283,7 @@ h2{
         display: inline-block;
         position: fixed;
         top:25px;
-        right:20vw;
+        right: 100px;
         z-index: 10002;
     }
     .lines_container.active :nth-child(1){
@@ -310,7 +310,7 @@ h2{
         flex-wrap: wrap;
     }
     .left button{
-        margin-top: 10px;
+        margin-top: 30px;
     }
 
     #main{
@@ -318,10 +318,9 @@ h2{
 
     }
     .left{
-        padding-top: 10vh;
         padding-left: 0;
         width: 100vw;
-        line-height: 45px;
+        line-height: 60px;
         height: 65vh;
     }
 
@@ -372,23 +371,29 @@ h2{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size:45px;
     }
+}
+@media (max-width: 1180px) { 
     h1{
-        font-size: 2rem;
+        font-size: 2.7rem;
         font-weight: 400;
         color: rgba(0, 0, 0, 0.813);
     }
     h1 span{
-        font-size: 3rem;
+        font-size: 4.5rem;
         color: #035D78;
         font-weight: 700;
     
     } 
-    h2{
-        font-size: 1rem;
-        font-weight: 300;
-    }
+    
 }
+@media (max-width: 920px) {
 
+    h2{
+        font-size: 1.24rem;
+        font-weight: 400;
+    }
+
+}
 @keyframes move {
     from{
         top: 18vh;
@@ -516,25 +521,25 @@ h2{
     padding-bottom: 3vh;
 }
 .real_project_cont{
-    padding: 0px 0vw;
+    padding: 20px 5vw;
     height: fit-content;
-    width: 100vw;
+    width: 90vw;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 .pro_photo_container{
-
-    margin-bottom: 30px;
-    width: fit-content;
+    margin-top: 25px;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .info_pro_img{
-    width: 90vw;
+    width: 400px;
+
 }
 
 .pro_photos{
@@ -542,7 +547,7 @@ h2{
     border: 2px solid #013342;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
-    width: fit-content;
+    width: 400px;
     /* height: fit-content; */
     display: flex;
     flex-direction: column;
@@ -563,6 +568,9 @@ h2{
             justify-content: space-between;
             align-items: center;
             min-height: 550px;
+    }
+    .page2{
+        margin-top: calc(20vh + 30px);
     }
 }
 /* page 3 */
@@ -608,7 +616,7 @@ h2{
 }
 #initials{
     color: #EEF2F4;
-    font-size: 7vw;
+    font-size: 1.7rem;
     font-weight: 500;
 }
 .jatt{
@@ -629,7 +637,7 @@ h2{
     border-width: 1px;
 }
 .about_content{
-    font-size: 4vw;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     width: 90vw;
@@ -640,7 +648,7 @@ h2{
 }
 .per{
     align-self: center;
-    font-size: 5vw;
+    font-size: 1.3rem;
     font-weight: 300;
 }
 
@@ -775,8 +783,7 @@ h2{
 }
 #footer_container{
     background-color: black;
-    height: fit-content;
-    padding-bottom: 10px;
+    height: 250px;
 }
 .footer_box1{
     display: flex;
@@ -784,7 +791,6 @@ h2{
     width: 100vw;
 }
 .footer_box2{
-    line-height: 25px;
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -797,23 +803,26 @@ h2{
 }
 .line{
     align-self: center;
-    position: relative;
-    top: -15px;
-    width: 30vw;
+    width: 20vw;
     height: 1px;
-    background-color: #eef2f485;
+    background-color: #EEF2F4;
 }
 .portfolio{
-    font-size: 1.2rem;
+    font-size: 2rem;
     align-self: center;
     margin-top: 15px;
-    color: #eef2f4c1;
+    color: #EEF2F4;
 }
 .this{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 300;
-    color: rgba(255, 255, 255, 0.632);
+    color: #EEF2F4;
     align-self: center;
+}
+@media (max-width:750px) {
+    #maut{
+        display: none;
+    }
 }
 .socials_card a{
     text-decoration: none;
@@ -824,17 +833,3 @@ h2{
     color: rgba(0, 0, 0, 0.625);
     transition-duration: 200ms;
 }
-@media (max-width:750px) {
-    #maut{
-        display: none;
-    }
-    .socials_card a{
-        transition:none;
-
-    }
-    .socials_card a:hover{
-        color: rgb(0, 0, 0);
-        transition: none;
-    }
-}
-
