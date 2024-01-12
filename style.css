@@ -287,10 +287,15 @@ h2 {
   }
   #slider.slide {
     right: 10vw;
+
     transition-duration: 300ms;
+  }
+  #slider {
+    display: inline;
   }
 
   .page1 {
+    overflow: hidden;
     padding-top: -10vh;
     flex-wrap: wrap;
     height: fit-content;
@@ -573,6 +578,7 @@ h2 {
 }
 /* page 3 */
 .page3 {
+  overflow: hidden;
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
@@ -664,6 +670,7 @@ h2 {
   height: fit-content;
   background-color: #eef2f4;
   position: relative;
+  overflow: hidden;
 }
 
 .contact_label {
