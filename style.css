@@ -912,16 +912,41 @@ h2 {
     padding-top: 0vh;
   }
   .contact_label {
-    font-size: 4.5vh;
+    width: fit-content;
+    font-size: 4vh;
     font-weight: 500;
     color: #013342;
-    padding: 10px 0;
-    width: 62vw;
+    padding: 10px 5vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: absolute;
     top: -40px;
-    left: calc(50% - 31vw);
+    left: calc(50% - 35vw);
     text-align: center;
     background-color: #eef2f4;
+  }
+}
+@media (max-width: 750px) {
+  @keyframes move {
+    from {
+      top: 4vh;
+      left: 5vw;
+      transform: skew(10deg);
+    }
+    to {
+      top: 10vh;
+      left: -3vw;
+      transform: skew(-10deg);
+    }
+  }
+
+  @keyframes run {
+    from {
+      left: 3vw;
+      top: 10vh;
+    }
+    to {
+      top: 5vh;
+      left: 8vw;
+    }
   }
 }
