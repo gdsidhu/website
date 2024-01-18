@@ -240,12 +240,7 @@ h2 {
   font-family: "Delicious Handrawn", cursive;
 }
 
-/* page2 */
-.page2 {
-  height: 100vh;
-  width: 100vw;
-  background-color: #88a6b124;
-}
+
 
 /* for mobile */
 
@@ -493,8 +488,11 @@ h2 {
 
 /* Project Section */
 .page2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #88a6b124;
   height: fit-content;
-  overflow: hidden;
+  overflow-x: hidden;
   padding-bottom: 3vh;
 }
 .real_project_cont {
@@ -579,6 +577,7 @@ h2 {
 /* page 3 */
 .page3 {
   overflow: hidden;
+  position: relative;
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
@@ -593,7 +592,7 @@ h2 {
 }
 .about_content_container {
   padding-top: 30px;
-  width: 80vw;
+  width: 100vw;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -960,4 +959,11 @@ h2 {
       left: 8vw;
     }
   }
+}
+.side_img1{
+  position: absolute;
+  width: 300px;
+  opacity: 1;
+  left: 0;
+  top: 200px;
 }
