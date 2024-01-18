@@ -240,8 +240,6 @@ h2 {
   font-family: "Delicious Handrawn", cursive;
 }
 
-
-
 /* for mobile */
 
 @media (max-width: 750px) {
@@ -605,7 +603,7 @@ h2 {
   /* width: 20vw; */
 
   height: 40vw;
-  margin-right: 15px;
+  margin-right: max(10vw, 10px);
   margin-top: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
@@ -614,7 +612,8 @@ h2 {
   margin-left: 30px;
   width: 400px;
   color: #eef2f4;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
+  font-size: max(1.5vw, 1.1rem);
   margin-top: 10px;
   margin-right: 5px;
 }
@@ -688,7 +687,7 @@ h2 {
 .left_right_container {
   display: flex;
 }
-.jatt1{
+.jatt1 {
   display: flex;
   justify-content: center;
 }
@@ -961,10 +960,27 @@ h2 {
     }
   }
 }
-.side_img1{
+.side_img1 {
+  display: none;
   position: absolute;
-  width: 300px;
+  width: 20vw;
   opacity: 1;
-  left: 0;
+  left: 0vw;
   top: 200px;
+}
+.my_img {
+  position: relative;
+}
+.about_content{
+  position: relative;
+}
+.about_content::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  width: 200px;
+  height: 300px;
+  top: 200px;
+  background-size: cover;
+  background-image: url("./assets/arrow.png");
 }
