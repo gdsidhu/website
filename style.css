@@ -676,12 +676,12 @@ h2 {
   font-size: 40px;
   font-weight: 500;
   color: #013342;
-  padding: 10px 0;
+  padding: 10px 0vw;
   width: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: absolute;
   top: -40px;
-  left: calc(50% - 150px);
+  /* left: calc(50% - 150px); */
   text-align: center;
   background-color: #eef2f4;
 }
@@ -927,8 +927,8 @@ h2 {
     padding: 10px 5vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: absolute;
+    /* left: 100px; */
     top: -40px;
-    left: calc(50% - 35vw);
     text-align: center;
     background-color: #eef2f4;
   }
