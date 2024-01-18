@@ -64,7 +64,7 @@ tl.from(projectCont2, {
     trigger: "#pro_photo_container2",
     scroller: "body",
     end: "top 75%",
-    scrub: 1.5,
+    scrub: 3,
   },
   x: -1100,
 });
@@ -73,7 +73,7 @@ tl.from(projectCont3, {
     trigger: "#pro_photo_container3",
     scroller: "body",
     end: "top 75%",
-    scrub: 1.5,
+    scrub: 3,
   },
   x: 1100,
 });
