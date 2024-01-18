@@ -26,7 +26,7 @@ hamburger.addEventListener("click", () => {
 const tl = gsap.timeline();
 
 tl.from("nav", {
-  translateY: "-150px",
+  y: "-150px",
   duration: 1,
 });
 // tl.from("h1", {
@@ -38,10 +38,10 @@ tl.from("nav", {
 // })
 
 tl.from("button", {
-  translateX: "-600px",
+  x: "-600px",
 });
 tl.to(scroll, {
-  translateY: "-20px",
+  y: "-20px",
   repeat: 4,
   delay: 3,
   yoyo: true,
@@ -57,7 +57,7 @@ tl.from(projectCont1, {
     scrub: 1.5,
   },
 
-  translateX: 1100,
+  x: 1100,
 });
 tl.from(projectCont2, {
   scrollTrigger: {
@@ -66,7 +66,7 @@ tl.from(projectCont2, {
     end: "top 75%",
     scrub: 1.5,
   },
-  translateX: -1100,
+  x: -1100,
 });
 tl.from(projectCont3, {
   scrollTrigger: {
@@ -75,5 +75,5 @@ tl.from(projectCont3, {
     end: "top 75%",
     scrub: 1.5,
   },
-  translateX: 1100,
+  x: 1100,
 });
