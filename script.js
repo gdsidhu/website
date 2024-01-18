@@ -10,10 +10,9 @@ const contact_width = contact_style.getPropertyValue("width");
 const contact_padding = contact_style.getPropertyValue("padding-right");
 let width = +contact_width.slice(0, -2);
 let padding = +contact_padding.slice(0, -2);
-console.log(padding)
 
 // centering contact label based on computed width
-contact_label.style.left = `calc(50vw - ${+width/2}px - ${padding}px`;
+// contact_label.style.left = `calc(50% - ${+width/2}px - ${padding}px`;
 
 function open_resume() {
   window.open("./assets/Gundeep_Resume.pdf");
