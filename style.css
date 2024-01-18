@@ -242,7 +242,7 @@ h2 {
 
 /* for mobile */
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   /* navbar */
   .img_container {
     display: none;
@@ -531,7 +531,7 @@ h2 {
   font-weight: 300;
   color: #013342;
 }
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   .pro_photo_container {
     margin-top: 0;
     margin-bottom: 0vh;
@@ -627,7 +627,7 @@ h2 {
   color: rgb(238, 242, 150);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   .about_content_container {
     width: 80vw;
     display: flex;
@@ -749,7 +749,7 @@ h2 {
   font-size: 70px;
   margin: 0 10px;
 }
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   .left4 {
     padding: 0px 0;
     width: 100vw;
@@ -832,7 +832,7 @@ h2 {
   color: #eef2f4;
   align-self: center;
 }
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   #maut {
     display: none;
   }
@@ -885,7 +885,7 @@ h2 {
   color: rgba(0, 0, 0, 0.625);
   transition-duration: 200ms;
 }
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   .socials_card a {
     text-decoration: none;
     color: #013342;
@@ -937,7 +937,7 @@ h2 {
     background-color: #eef2f4;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   @keyframes move {
     from {
       top: 4vh;
@@ -979,7 +979,7 @@ h2 {
   rotate: -90deg;
   z-index: 10;
 }
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   .side_img1 {
     display: none;
   }
