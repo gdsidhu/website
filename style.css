@@ -37,8 +37,9 @@ nav {
   font-size: 1.4rem;
   text-decoration: none;
   color: black;
-  padding: 5px 15px;
-  border: 2px solid rgb(0, 0, 0);
+  padding: 0px 15px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.065);
   border-radius: 30px;
   overflow: hidden;
   z-index: 9;
@@ -47,25 +48,27 @@ nav {
   content: "";
   background-color: black;
   width: 110%;
-  height: 100%;
+  height: 150%;
   /* top: 100%; */
   top: 100%;
   left: -5%;
   z-index: 2;
-  border-radius: 70%;
-
+  border-radius: 500%;
+  transition: all 400ms ease-in-out;
   position: absolute;
 }
 .quick-links:hover::after {
   top: 0;
-  border-radius: 30px;
-  transition: all 300ms ease;
+  border-radius: 0px;
+  transition: all 400ms ease-in-out;
 }
 .quick-links:hover .links {
   color: white;
+  transition-delay: 80ms;
 }
 .quick-links:hover {
   border-color: black;
+  transition-delay: 80ms;
 }
 .links {
   text-decoration: none;
