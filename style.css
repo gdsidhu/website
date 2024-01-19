@@ -21,9 +21,9 @@ nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.173);
 }
 #logo {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 3vh;
+  line-height: 30px;
   cursor: default;
 }
 .menu {
@@ -983,4 +983,13 @@ h2 {
   .side_img1 {
     display: none;
   }
+  #logo{
+    display: none;
+  }
+}
+.something{
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+
 }
