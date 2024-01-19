@@ -262,6 +262,7 @@ h2 {
   .lines_container {
     display: inline-block;
     position: fixed;
+    margin-right: 25px;
     top: 25px;
     right: 15vw;
     z-index: 10002;
@@ -992,7 +993,8 @@ h2 {
     display: none;
   }
   #logo{
-    display: none;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 .something{
