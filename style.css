@@ -333,10 +333,15 @@ h2 {
   }
   nav {
     top: 0;
-    background-color: #eef2f4;
+    background-color:#eef2f4;
     position: fixed;
+    height: 30px;
     z-index: 10000;
     width: 100vw;
+    border-bottom: 3px solid rgb(0, 0, 0);
+  }
+  #jatt4{
+    height: 80px;
   }
   .right {
     position: relative;
