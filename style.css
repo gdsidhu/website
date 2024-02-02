@@ -622,7 +622,7 @@ h2 {
   /* box-shadow: 2px 0px 10px white; */
   /* width: 20vw; */
 
-  height: max(35vw, 450px);
+  height: max(35vw, 480px);
   margin-right: max(10vw, 10px);
   margin-top: 10px;
   margin-left: 10px;
@@ -632,9 +632,10 @@ h2 {
   margin-left: 30px;
   width: 400px;
   color: #eef2f4;
-  font-size: max(1.5vw, 1.1rem);
+  font-size: 1.2rem;
   margin-top: 10px;
   margin-right: 5px;
+  line-height: 35px;
 }
 #initials {
   color: #eef2f4;
