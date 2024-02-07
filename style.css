@@ -902,10 +902,10 @@ h2 {
   color: #013342;
   transition-duration: 200ms;
 }
-.socials_card a:hover {
+/* .socials_card a:hover {
   color: rgba(0, 0, 0, 0.625);
   transition-duration: 200ms;
-}
+} */
 @media (max-width: 1000px) {
   .socials_card a {
     text-decoration: none;
@@ -1020,6 +1020,49 @@ h2 {
 #jatt4 {
   cursor: pointer;
 }
-.yillow{
+.yillow {
   color: rgb(238, 242, 150);
+}
+#icoon3:hover {
+  color: rgb(2, 115, 178);
+  font-size: 65px;
+  transition-duration: 200ms;
+}
+#icoon2 {
+  font-size: 65px;
+}
+#icoon2:hover {
+  color: rgb(204, 135, 69);
+  font-size: 60px;
+  transition-duration: 200ms;
+}
+#icoon1:hover {
+  color: rgb(78, 100, 228);
+  font-size: 65px;
+  transition-duration: 200ms;
+}
+@media (max-width: 1000px) {
+  #icoon3 {
+    color: rgb(2, 115, 178);
+    font-size: 50px;
+  }
+  #icoon2 {
+    font-size: 45px;
+  }
+  #icoon1 {
+    color: rgb(46, 62, 155);
+    font-size: 50px;
+  }
+  #icoon3:hover {
+    color: rgb(2, 115, 178);
+    font-size: 50px;
+  }
+  #icoon2:hover {
+    font-size: 45px;
+    color: #013342;
+  }
+  #icoon1:hover {
+    color: rgb(46, 62, 155);
+    font-size: 50px;
+  }
 }
