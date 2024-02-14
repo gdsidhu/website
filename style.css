@@ -1044,18 +1044,18 @@ h2 {
 }
 @media (max-width: 1000px) {
   #icoon3 {
-    color: rgb(2, 115, 178);
+    color: #013342;
     font-size: 50px;
   }
   #icoon2 {
     font-size: 45px;
   }
   #icoon1 {
-    color: rgb(46, 62, 155);
+    color: #013342;
     font-size: 50px;
   }
   #icoon3:hover {
-    color: rgb(2, 115, 178);
+    color: #013342;
     font-size: 50px;
   }
   #icoon2:hover {
@@ -1063,7 +1063,7 @@ h2 {
     color: #013342;
   }
   #icoon1:hover {
-    color: rgb(46, 62, 155);
+    color: #013342;
     font-size: 50px;
   }
 }
