@@ -1044,7 +1044,7 @@ h2 {
   font-size: 65px;
 }
 #icoon2:hover {
-  color: rgb(204, 135, 69);
+  color: #ff7676;
   font-size: 60px;
   transition-duration: 200ms;
 }
@@ -1053,10 +1053,19 @@ h2 {
   font-size: 65px;
   transition-duration: 200ms;
 }
+#icoon4:hover {
+  color: rgb(78, 100, 228);
+  font-size: 65px;
+  transition-duration: 200ms;
+}
 @media (max-width: 1000px) {
   #icoon3 {
     color: #013342;
     font-size: 50px;
+  }
+  #icoon4 {
+    color: #013342;
+    font-size: 52px;
   }
   #icoon2 {
     font-size: 45px;
@@ -1076,6 +1085,10 @@ h2 {
   #icoon1:hover {
     color: #013342;
     font-size: 50px;
+  }
+  #icoon4:hover {
+    color: #013342;
+    font-size: 52px;
   }
 }
 .circle-overlay {
