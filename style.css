@@ -60,7 +60,7 @@ nav {
   left: -5%;
   z-index: 2;
   border-radius: 500%;
-  transition: all 400ms ease-in-out;
+  transition: all 250ms ease-in-out;
   position: absolute;
 }
 .quick-links:hover {
@@ -68,7 +68,7 @@ nav {
 .quick-links:hover::after {
   top: 0;
   border-radius: 0px;
-  transition: all 400ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 .quick-links:hover .links {
   color: white;
