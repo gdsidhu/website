@@ -60,7 +60,7 @@ nav {
   left: -5%;
   z-index: 2;
   border-radius: 500%;
-  transition: all 250ms ease-in-out;
+  transition: all 320ms ease-in-out;
   position: absolute;
 }
 .quick-links:hover {
