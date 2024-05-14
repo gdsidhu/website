@@ -894,15 +894,16 @@ h2 {
     background-color: black;
   }
   .portfolio {
-    font-size: 32px;
+    font-size: 24px;
+    opacity: 0.9;
     align-self: center;
-    margin-top: 15px;
-    font-weight: 500;
+    margin-top: 8px;
+    font-weight: 400;
     color: #1f2544;
   }
   .this {
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 400;
     line-height: 25px;
     color: black;
     align-self: center;
