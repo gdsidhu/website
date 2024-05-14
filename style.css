@@ -1040,11 +1040,22 @@ h2 {
   font-size: 65px;
   transition-duration: 200ms;
 }
+#icoon1 {
+  color: rgb(78, 100, 228);
+}
 #icoon2 {
   font-size: 65px;
 }
+#icoon3 {
+  color: rgb(2, 115, 178);
+}
+#icoon4 {
+}
+#icoon5 {
+  color: #ff1512;
+}
 #icoon2:hover {
-  color: #ff7676;
+  /* color: #ff7676; */
   font-size: 60px;
   transition-duration: 200ms;
 }
@@ -1053,29 +1064,38 @@ h2 {
   font-size: 65px;
   transition-duration: 200ms;
 }
+#icoon5:hover {
+  color: #ff1512;
+  font-size: 65px;
+  transition-duration: 200ms;
+}
 #icoon4:hover {
-  color: rgb(78, 100, 228);
+  /* color: rgb(78, 100, 228); */
   font-size: 65px;
   transition-duration: 200ms;
 }
 @media (max-width: 1000px) {
   #icoon3 {
-    color: #013342;
+    /* color: #013342; */
     font-size: 50px;
   }
   #icoon4 {
     color: #013342;
     font-size: 52px;
   }
+  #icoon5 {
+    /* color: #ff1512; */
+    font-size: 52px;
+  }
   #icoon2 {
     font-size: 45px;
   }
   #icoon1 {
-    color: #013342;
+    /* color: #013342; */
     font-size: 50px;
   }
   #icoon3:hover {
-    color: #013342;
+    /* color: #013342; */
     font-size: 50px;
   }
   #icoon2:hover {
@@ -1083,11 +1103,15 @@ h2 {
     color: #013342;
   }
   #icoon1:hover {
-    color: #013342;
+    /* color: #013342; */
     font-size: 50px;
   }
   #icoon4:hover {
     color: #013342;
+    font-size: 52px;
+  }
+  #icoon5:hover {
+    color: #ff1512;
     font-size: 52px;
   }
 }
