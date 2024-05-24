@@ -71,7 +71,7 @@ nav {
   transition: all 250ms ease-in-out;
 }
 .quick-links:hover .links {
-  color: white;
+  color: #9FC84E;
   transition-delay: 80ms;
 }
 .quick-links:hover {
