@@ -757,14 +757,16 @@ h2 {
 .phone {
   color: #013342;
   font-size: 20px;
-  line-height: 50px;
+  font-weight: 500;
+  line-height: 40px;
   position: relative;
-  left: -40px;
+  left: -25px;
 }
 .mail {
   color: #013342;
   font-size: 20px;
   line-height: 50px;
+  font-weight: 500;
 }
 .social_icons {
   font-size: 70px;
@@ -809,10 +811,14 @@ h2 {
     line-height: 40px;
     position: relative;
     left: 0px;
+    /* font-size: 4vw; */
+    /* line-height: 7vh; */
   }
   .mail {
     font-size: 20px;
     line-height: 40px;
+    /* font-size: 4vw; */
+    /* line-height: 5vh; */
   }
 }
 #footer_container {
@@ -932,15 +938,8 @@ h2 {
   .social_icons {
     font-size: 12vw;
   }
-  .phone {
-    font-size: 4vw;
-    line-height: 7vh;
-    position: relative;
-  }
-  .mail {
-    font-size: 4vw;
-    line-height: 5vh;
-  }
+
+
   .right4 {
     padding-top: 5vh;
     height: 15vh;
