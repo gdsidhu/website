@@ -1040,20 +1040,20 @@ h2 {
   font-size: 65px;
   transition-duration: 200ms;
 }
-#icoon1 {
+/* #icoon1 {
   color: rgb(78, 100, 228);
-}
+} */
 #icoon2 {
   font-size: 65px;
 }
-#icoon3 {
+/* #icoon3 {
   color: rgb(2, 115, 178);
-}
+} */
 #icoon4 {
 }
-#icoon5 {
+/* #icoon5 {
   color: #ff1512;
-}
+} */
 #icoon2:hover {
   /* color: #ff7676; */
   font-size: 60px;
